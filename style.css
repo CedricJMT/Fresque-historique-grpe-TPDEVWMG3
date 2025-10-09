@@ -1,3 +1,11 @@
+.frise {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #666;
+}
+
 header h1 {
     display: flex;
     justify-content: center;
@@ -52,6 +60,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 250ms;
 }
 
 .timeline-item::after {
@@ -110,39 +119,33 @@ body {
 }
 
 .infoevent {
-    width: 30px;
-    height: 30px;
+    width: 300px;
+    height: 150px;
     background: red;
     position: absolute;
-    border-radius: 50%;
+    display: none;
     bottom: 150px;
-    visibility: hidden;
-    opacity: 0;
-    transition: vibility 0s;
-    opacity: 0.5s ease;
 }
 
 .secondinfoevent {
     background: blueviolet;
-    width: 30px;
-    height: 30px;
+    width: 300px;
+    height: 150px;
     position: absolute;
-    border-radius: 50%;
+    display: none;
     top: 150px;
-    visibility: hidden;
-    opacity: 0;
-    transition: vibility 0s;
-    opacity: 0.5s ease;
 }
 
-.timeline-item:hover .infoevent {
+.timeline-item .infoevent {
     color: blue;
-    visibility: visible;
     opacity: 1;
 }
 
-.timeline-item:hover .secondinfoevent {
+.timeline-item:active .secondinfoevent {
     color: blue;
-    visibility: visible;
     opacity: 1;
+}
+
+.timeline-item:hover {
+    transform: translateY(200px);
 }
