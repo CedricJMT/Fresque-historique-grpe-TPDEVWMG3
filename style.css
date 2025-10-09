@@ -3,7 +3,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #666;
+	background-color: #aaa;
+	flex-direction: column;
 }
 
 header h1 {
@@ -34,20 +35,22 @@ body {
 	padding: 20px 0;
 	display: flex;
 	align-items: center;
+	width: 100%;
+	justify-content: center;
 }
 
 .timeline {
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: space-around;
 	width: fit-content;
 	height: 100px;
 	border: 1px solid grey;
 	border-right: 0;
-	gap: 30px;
 	padding: 0 15px;
 	background: white;
 	position: relative;
+	width: 90%;
 }
 .timeline::before {
 	content: "";
@@ -59,19 +62,23 @@ body {
 }
 .timeline-item {
 	position: relative;
+	padding: 15px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* transition: transform 250ms; */
+}
+.timeline-item h6 {
 	width: 50px;
 	height: 50px;
 	background: #f9bebe;
-	padding: 15px;
-	text-align: center;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: transform 250ms;
 }
-
-.timeline-item:nth-child(2n) {
+.timeline-item:nth-child(2n) h6 {
 	background: #37fb00;
 }
 
@@ -107,8 +114,8 @@ body {
 }
 
 .infoevent {
-	width: 50px;
-	height: 50px;
+	width: 0px;
+	height: 0px;
 	background: rgb(255, 255, 255);
 	border: 2px solid orange;
 	position: absolute;
@@ -123,18 +130,18 @@ body {
 }
 
 .timeline-item:nth-child(2n) .infoevent {
-	transition: top 1s ease-in, width 1s ease-in, height 1s ease-in, opacity 1s ease-in;
-	-webkit-transition: top 1s ease-in, width 1s ease-in, height 1s ease-in, opacity 1s ease-in;
-	-moz-transition: top 1s ease-in, width 1s ease-in, height 1s ease-in, opacity 1s ease-in;
-	-o-transition: top 1s ease-in, width 1s ease-in, height 1s ease-in, opacity 1s ease-in;
-	top: 0;
+	transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
+	-webkit-transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
+	-moz-transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
+	-o-transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
+	top: 55px;
 }
 .timeline-item:nth-child(2n + 1) .infoevent {
-	transition: bottom 1s ease-in, width 1s ease-in, height 1s ease-in, opacity 1s ease-in;
-	-webkit-transition: bottom 1s ease-in, width 1s ease-in, height 1s ease-in, opacity 1s ease-in;
-	-moz-transition: bottom 1s ease-in, width 1s ease-in, height 1s ease-in, opacity 1s ease-in;
-	-o-transition: bottom 1s ease-in, width 1s ease-in, height 1s ease-in, opacity 1s ease-in;
-	bottom: 0;
+	transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
+	-webkit-transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
+	-moz-transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
+	-o-transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
+	bottom: 55px;
 }
 
 .timeline-item:nth-child(1):hover .infoevent {
