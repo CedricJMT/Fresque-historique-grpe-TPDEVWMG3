@@ -72,14 +72,15 @@ body {
 .timeline-item h6 {
 	width: 50px;
 	height: 50px;
-	background: #f9bebe;
+	background: #fdf1f1;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: 1px solid grey;
 }
 .timeline-item:nth-child(2n) h6 {
-	background: #37fb00;
+	background: #efffc4;
 }
 
 .timeline-item h6 {
