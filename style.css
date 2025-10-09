@@ -1,0 +1,128 @@
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    height: 100%;
+}
+
+footer {
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.timeline-container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 100px;
+    border: 1px solid grey;
+    border-right: 0;
+    gap: 30px;
+    padding: 0 15px;
+    background: white;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #f9bebe;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 15px;
+    height: 2px;
+    background: grey;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 15px;
+    height: 2px;
+    background: grey;
+}
+
+.timeline-item:nth-child(2n) {
+    background: #37fb00;
+}
+
+.timeline-item h6 {
+    color: #333;
+}
+
+.timeline-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Scrollbar styles for better visibility (optional) */
+.timeline-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 70px solid grey;
+}
+
+.infoevent {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 150px;
+}
+
+.secondinfoevent {
+    background: blueviolet;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    top: 150px;
+}
