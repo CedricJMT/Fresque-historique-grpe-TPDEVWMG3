@@ -1,175 +1,183 @@
 .frise {
-	height: 85vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #aaa;
-	flex-direction: column;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #aaa;
+    flex-direction: column;
 }
 
 header h1 {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 body {
-	height: 100%;
+    height: 100%;
 }
 
 footer {
-	background-color: black;
+    background-color: black;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, sans-serif;
-	background: #f4f4f4;
-	margin: 0;
-	padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
 .timeline-container {
-	padding: 20px 0;
-	display: flex;
-	align-items: center;
-	width: 100%;
-	justify-content: center;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .timeline {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: fit-content;
-	height: 100px;
-	border: 1px solid grey;
-	border-right: 0;
-	padding: 0 15px;
-	background: white;
-	position: relative;
-	width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    height: 100px;
+    border: 1px solid grey;
+    border-right: 0;
+    padding: 0 15px;
+    background: white;
+    position: relative;
+    width: 90%;
 }
 .timeline::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	height: 2px;
-	background: grey;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: grey;
 }
 .timeline-item {
-	position: relative;
-	padding: 15px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* transition: transform 250ms; */
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: transform 250ms; */
 }
 .timeline-item h6 {
-	width: 50px;
-	height: 50px;
-	background: #f9bebe;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #f9bebe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .timeline-item:nth-child(2n) h6 {
-	background: #37fb00;
+    background: #37fb00;
 }
 
 .timeline-item h6 {
-	color: #333;
+    color: #333;
 }
 
 .timeline-item p {
-	font-size: 14px;
-	color: #666;
+    font-size: 14px;
+    color: #666;
 }
 
 /* Scrollbar styles for better visibility (optional) */
 .timeline-container::-webkit-scrollbar {
-	height: 8px;
+    height: 8px;
 }
 
 .timeline-container::-webkit-scrollbar-thumb {
-	background: #ccc;
-	border-radius: 4px;
+    background: #ccc;
+    border-radius: 4px;
 }
 
 .timeline-container::-webkit-scrollbar-track {
-	background: #eee;
+    background: #eee;
 }
 
 .arrow-right {
-	width: 0;
-	height: 0;
-	border-top: 70px solid transparent;
-	border-bottom: 70px solid transparent;
-	border-left: 70px solid grey;
+    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 70px solid grey;
 }
 
 .infoevent {
-	width: 0px;
-	height: 0px;
-	background: rgb(255, 255, 255);
-	border: 2px solid orange;
-	position: absolute;
-	border-radius: 50%;
-	/* display: none; */
-	opacity: 0;
+    width: 0px;
+    height: 0px;
+    background: rgb(255, 255, 255);
+    border: 2px solid orange;
+    position: absolute;
+    border-radius: 50%;
+    /* display: none; */
+    opacity: 0;
 }
 .timeline-item:hover .infoevent {
-	opacity: 1;
-	width: 150px;
-	height: 150px;
+    opacity: 1;
+    width: 150px;
+    height: 150px;
 }
 
 .timeline-item:nth-child(2n) .infoevent {
-	transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
-	-webkit-transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
-	-moz-transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
-	-o-transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
-	top: 55px;
+    transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in,
+        opacity 0.5s ease-in;
+    -webkit-transition: top 0.5s ease-in, width 0.5s ease-in,
+        height 0.5s ease-in, opacity 0.5s ease-in;
+    -moz-transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in,
+        opacity 0.5s ease-in;
+    -o-transition: top 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in,
+        opacity 0.5s ease-in;
+    top: 55px;
 }
 .timeline-item:nth-child(2n + 1) .infoevent {
-	transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
-	-webkit-transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
-	-moz-transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
-	-o-transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in, opacity 0.5s ease-in;
-	bottom: 55px;
+    transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in,
+        opacity 0.5s ease-in;
+    -webkit-transition: bottom 0.5s ease-in, width 0.5s ease-in,
+        height 0.5s ease-in, opacity 0.5s ease-in;
+    -moz-transition: bottom 0.5s ease-in, width 0.5s ease-in,
+        height 0.5s ease-in, opacity 0.5s ease-in;
+    -o-transition: bottom 0.5s ease-in, width 0.5s ease-in, height 0.5s ease-in,
+        opacity 0.5s ease-in;
+    bottom: 55px;
 }
 
 .timeline-item:nth-child(1):hover .infoevent {
-	bottom: 150px;
+    bottom: 150px;
 }
 .timeline-item:nth-child(2):hover .infoevent {
-	top: 150px;
+    top: 150px;
 }
 .timeline-item:nth-child(3):hover .infoevent {
-	bottom: 120px;
+    bottom: 120px;
 }
 .timeline-item:nth-child(4):hover .infoevent {
-	top: 120px;
+    top: 120px;
 }
 .timeline-item:nth-child(5):hover .infoevent {
-	bottom: 180px;
+    bottom: 180px;
 }
 .timeline-item:nth-child(6):hover .infoevent {
-	top: 180px;
+    top: 180px;
 }
 .timeline-item:nth-child(7):hover .infoevent {
-	bottom: 100px;
+    bottom: 100px;
 }
 
-.timeline-item .infoevent {
-	/* color: blue;
-	opacity: 1; */
-}
+/* .timeline-item .infoevent {
+     color: blue;
+	opacity: 1; 
+} */
 
 /* .timeline-item:hover {
 	transform: translateY(200px);
