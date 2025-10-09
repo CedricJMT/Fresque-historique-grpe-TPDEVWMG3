@@ -1,3 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+header p {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.entete h2 {
+    margin-bottom: 0;
+}
+
+.entete p {
+    font-style: italic;
+    margin-top: 0;
+}
+
+footer {
+    background-color: rgb(68, 65, 65);
+}
+
 .frise {
     height: 85vh;
     display: flex;
@@ -5,30 +46,6 @@
     justify-content: center;
     background-color: #aaa;
     flex-direction: column;
-}
-
-header h1 {
-    display: flex;
-    justify-content: center;
-}
-
-body {
-    height: 100%;
-}
-
-footer {
-    background-color: black;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 20px;
 }
 
 .timeline-container {
